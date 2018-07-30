@@ -33,5 +33,5 @@ describe 'Song Associations' do
     expect(Song.where(name: "Forever").first.genre).to eq(genre)
     expect(Genre.where(name: "Rap").first.songs).to include(@song)
   end
-  
+
 end
